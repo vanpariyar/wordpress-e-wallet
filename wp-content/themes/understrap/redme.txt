@@ -1,0 +1,11 @@
+chnage wp-config.php file
+mysql password and user.
+
+create database as same name provided in config file
+
+then import DB 
+
+open http://localhost/wordpress-e-wallet/wp-admin/
+
+user : vanpariyar
+password : 123123@12

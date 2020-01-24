@@ -26,7 +26,7 @@ define( 'DB_NAME', 'wordpress-e-wallet' );
 define( 'DB_USER', 'root' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'root' );
+define( 'DB_PASSWORD', '' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
@@ -64,7 +64,7 @@ define( 'WP_CACHE_KEY_SALT', 'jaH>UnQ9@ eyAed:$rBR[y2{%D_y41N*GU^av#Vy@/S7NRkAUZ
  */
 $table_prefix = 'wpew_';
 
-
+define('FS_METHOD', 'direct');
 
 
 /* That's all, stop editing! Happy publishing. */
