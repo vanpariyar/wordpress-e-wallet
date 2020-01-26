@@ -16,12 +16,11 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 
 $container = get_theme_mod( 'understrap_container_type' );
-
+get_template_part( 'loop-templates/content-transections' );
 $user = wp_get_current_user();
 // echo '<pre>';
-if ( $user->roles[0] == 'subscriber') {
-	var_dump($user->roles[0]); echo 'fasdfasd';
-    get_template_part( 'loop-templates/contencontent-transections.php' );
+if ( isset($user->roles[0]) && $user->roles[0] == 'wallet_user' ) {
+    get_template_part( 'loop-templates/content-transections' );
 }else{
 ?>
 
