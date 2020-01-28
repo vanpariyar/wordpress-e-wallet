@@ -159,6 +159,7 @@ function send_money() {
 			$temp = array('date'=>current_time( 'timestamp' ), 'amount'=> $amount, 'type'=> $type );
 			array_push($transection_1, $temp);
 			update_user_meta( $user_id, 'transaction', $transection_1 );
+			delete_user_meta( $user_id, 'wallet_transaction' );
 
 		}
 

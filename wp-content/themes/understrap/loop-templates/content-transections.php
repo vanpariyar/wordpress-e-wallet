@@ -2,7 +2,7 @@
     $current_user_id = get_current_user_id();
     $usermeta = get_user_meta($current_user_id);
 
-    var_dump($usermeta);
+    // var_dump($usermeta);
 
     $fname = $usermeta['first_name'][0];
 ?>
@@ -29,13 +29,15 @@
         <div class="col-sm-4">
             <div class="card text-center shadow p-3 mb-5 bg-white rounded" style="width:auto">
                 <div class="card-body">
-                    <h5 class="card-title">Receive Money</h5>
-                <button class="btn btn-primary receive-money">Receive Money</button>
+                    <h5 class="card-title">Add Money</h5>
+                <button class="btn btn-primary receive-money">Add Money</button>
                 </div>
             </div>
         </div>
     </div>
-
+    <div class="text-center">
+    <img src="http://localhost/wordpress-e-wallet/wp-content/uploads/2020/01/Cycling-Etsy-Banner.png" alt="" class="img-responsive">
+    </div>
     <h3 class="text-center m-5"> Transactions </h3>
 
     <table class="table table-striped">
@@ -73,7 +75,7 @@
 <?php
     $blogusers = get_users( [ 'role__in' => [ 'wallet_user'] ] );
     // Array of WP_User objects.
-    var_dump($blogusers);
+    // var_dump($blogusers);
     
 ?>
 
@@ -118,3 +120,6 @@
   </div>
 </div>
 </form>
+
+<?php
+get_footer(  );
